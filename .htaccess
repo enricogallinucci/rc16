@@ -1,0 +1,14 @@
+
+RewriteEngine on
+ErrorDocument 404 /404.php
+RewriteCond %{HTTP_HOST} ^referendumcostituzionale2016\.it$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.referendumcostituzionale2016\.it$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^facebook$ "http\:\/\/www\.facebook\.com\/IoVotoConsapevole" [R=302,L]
+RewriteCond %{HTTP_HOST} ^referendumcostituzionale2016\.it$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.referendumcostituzionale2016\.it$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^twitter$ "http\:\/\/twitter\.com\/VotoConsapevole" [R=302,L]
+
